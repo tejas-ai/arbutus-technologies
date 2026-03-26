@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <rect width="300" height="100" fill="transparent"/>
+  <circle cx="150" cy="40" r="20" fill="none" stroke="#00b4d8" stroke-width="4"/>
+  <path d="M150 20 v40 M130 40 h40" stroke="#00b4d8" stroke-width="2"/>
+  <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#ffffff">ONLINE SUPPLIERS</text>
+</svg>

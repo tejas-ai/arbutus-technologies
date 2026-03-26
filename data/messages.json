@@ -1,0 +1,24 @@
+{
+    "inquiries": [
+        {
+            "id": "msg_1710000000000",
+            "name": "Yosabanta Swain",
+            "company": "Swain Electronics",
+            "email": "yosabanta@swain.com",
+            "product": "Surge Suppressors",
+            "date": "2026-03-09T10:45:00Z",
+            "status": "new",
+            "content": "We need a bulk order of 5,000 units of SURGE SUPPRESSORS. Please provide the lead time and the best possible discounted price. We are looking to finalize this by Friday."
+        },
+        {
+            "id": "msg_1710000000001",
+            "name": "Sreejith",
+            "company": "TechFix Solutions",
+            "email": "sreejith@techfix.com",
+            "product": "Integrated Circuits",
+            "date": "2026-03-08T09:30:00Z",
+            "status": "new",
+            "content": "Looking for Atmel NOR Flash IC variants. Do you have the AT45DB321E model in stock? If not, could you suggest a direct equivalent that is available for immediate shipping?"
+        }
+    ]
+}

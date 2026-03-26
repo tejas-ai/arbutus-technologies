@@ -1,0 +1,111 @@
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const CATALOG_SECTIONS = [
+    {
+        title: "Crystal Units",
+        items: [
+            "HC-49/S (Thru-hole)", "HC-49/SMD", "SMD 3225 (3.2x2.5mm)", "SMD 2520 (2.5x2.0mm)",
+            "SMD 2016 (2.0x1.6mm)", "SMD 5032 (5.0x3.2mm)", "Watch Crystals (32.768kHz)",
+            "High Precision Crystals", "Automotive Grade Crystals", "Industrial Temperature Crystals"
+        ]
+    },
+    {
+        title: "Crystal Oscillators",
+        items: [
+            "XO (Standard Crystal Oscillator)", "VCXO (Voltage Controlled)", "TCXO (Temperature Compensated)",
+            "OCXO (Oven Controlled)", "Programmable Oscillators", "Low Jitter Oscillators",
+            "Differential Oscillators (LVPECL, LVDS)", "CMOS Oscillators", "Ultra-Low Power Oscillators",
+            "Clock Oscillators (SMD & Thru-hole)"
+        ]
+    },
+    {
+        title: "Resonators",
+        items: [
+            "Ceramic Resonators (Built-in Cap)", "Ceramic Resonators (External Cap)", 
+            "MHz Range Resonators", "KHz Range Resonators", "SMD Ceramic Resonators",
+            "Thru-hole Ceramic Resonators", "Surface Mount Designs", "Stable Frequency Sources"
+        ]
+    },
+    {
+        title: "Filters",
+        items: [
+            "Ceramic Filters", "SAW Filters (Surface Acoustic Wave)", "Crystal Filters",
+            "EMI/RFI Filters", "Bandpass Filters", "Low Pass Filters", "High Pass Filters",
+            "Dielectric Filters", "RF Filters for Communication"
+        ]
+    }
+];
+
+export default function TimingDevicesPage() {
+    return (
+        <main className="min-h-screen bg-[#010e30] overflow-x-hidden pt-32 pb-20 selection:bg-accent/30">
+            <Navbar />
+            
+            <div className="max-w-7xl mx-auto px-6">
+                {/* Hero Header */}
+                <motion.div 
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mb-24 text-center md:text-left"
+                >
+                    <div className="flex items-center gap-3 mb-6 justify-center md:justify-start">
+                        <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                        <span className="text-[11px] font-black uppercase tracking-[0.4em] text-accent/80">Timing Devices</span>
+                    </div>
+                    <h1 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8 max-w-4xl leading-[0.9]">
+                        Frequency Control <br />
+                        <span className="text-white/20">Solutions</span>
+                    </h1>
+                </motion.div>
+
+                {/* Catalog Sections (Line Card Style) */}
+                <div className="space-y-32 mb-40">
+                    {CATALOG_SECTIONS.map((section, sectionIdx) => (
+                        <motion.div 
+                            key={section.title}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: sectionIdx * 0.1 }}
+                            id={section.title.toLowerCase().replace(/\s+/g, '-')}
+                            className="relative scroll-mt-40"
+                        >
+                            <div className="flex items-center gap-4 mb-12">
+                                <div className="w-8 h-[2px] bg-accent" />
+                                <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tighter italic">
+                                    {section.title}
+                                </h2>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
+                                {section.items.map((item, itemIdx) => (
+                                    <motion.div
+                                        key={item}
+                                        initial={{ opacity: 0, x: -10 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.4, delay: (itemIdx % 50) * 0.005 }}
+                                        viewport={{ once: true }}
+                                        className="group flex items-center gap-4 py-1"
+                                    >
+                                        <div className="w-1.5 h-1.5 rounded-full bg-accent/20 group-hover:bg-accent transition-all duration-300 shrink-0" />
+                                        <span className="text-white/60 group-hover:text-white transition-all duration-300 font-medium text-sm md:text-base tracking-wide">
+                                            {item}
+                                        </span>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+
+            </div>
+            
+            <Footer />
+        </main>
+    );
+}

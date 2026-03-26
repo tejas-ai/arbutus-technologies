@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+:root {
+    --bg: #010226;
+    --surface: #020338;
+    --text: #E8EDFF;
+    --muted: #A3B2E3;
+    --accent: #00E5FF;
+    --stroke: rgba(0, 229, 255, 0.2);
+    
+    /* Dashboard Palette */
+    --soft-white: #F8FAFC;
+    --slate-blue: #475569;
+}
+
+[data-theme="dark"] {
+    --bg: #010226;
+    --surface: #020338;
+    --text: #E8EDFF;
+    --muted: #A3B2E3;
+    --accent: #00E5FF;
+    --stroke: rgba(0, 229, 255, 0.2);
+}
+
+@layer base {
+    body {
+        @apply bg-bg text-text font-body antialiased selection:bg-accent selection:text-white;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.bg-accent-gradient {
+    background: linear-gradient(90deg, #023e8a 0%, #0077b6 100%);
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(400%);
+        opacity: 0;
+    }
+}
+
+.animate-scroll-down {
+    animation: scroll-down 1.8s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.4s ease-out forwards;
+}
+
+.blur-in {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+}
+
+.name-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Premium Dark Mode Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(1, 2, 38, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 180, 216, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 180, 216, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+/* Modern Mobile Dashboard Utilities */
+.shadow-premium {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
