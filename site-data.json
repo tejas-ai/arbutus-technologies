@@ -1,0 +1,606 @@
+{
+    "about": {
+        "header": "ABOUT ARBUTUS",
+        "title": "A Decade of Technical Excellence",
+        "paragraphs": [
+            "Arbutus Technologies established in 2013, has become leading Indian Professional Distribution Company in the field of Electronic Components and is being managed by a group of professionals having both business and technical expertise with a very structured operation for Foreign & Local Currency Business.",
+            "ARBUTUS also provides Ready Reckoner Solutions in different verticals to meet wide customer requirements. ARBUTUS is a One-stop Sourcing and Design Solution provider for electronic products.",
+            "We source and stock wide range of electronic components, supporting major semiconductor brands (AD, NXP, Altera, Xilinx, etc.) for both prototype and volume quantities globally."
+        ],
+        "profile": {
+            "incorporationDate": "20th November 2013",
+            "divisions": [
+                {
+                    "name": "Component Division",
+                    "description": "Comprehensive sourcing and supply of electronic components with structured Foreign & Local Currency operations.",
+                    "highlights": [
+                        "Global Sourcing",
+                        "Stocking & Distribution",
+                        "INR & USD Billing"
+                    ]
+                },
+                {
+                    "name": "Embedded Design House",
+                    "description": "Custom engineering and Ready Reckoner Solutions for advanced embedded systems and product design.",
+                    "highlights": [
+                        "Design Solutions",
+                        "Ready Reckoner",
+                        "Technical Support"
+                    ]
+                }
+            ],
+            "employees": {
+                "sales": 3,
+                "rd": 5,
+                "staff": 2,
+                "total": 10
+            },
+            "partnerships": {
+                "title": "Add-on Support",
+                "description": "Comprehensive support for Semiconductors (Active & Passive) across all major global brands.",
+                "brands": [
+                    "Mouser Electronics",
+                    "DigiKey",
+                    "element14",
+                    "Formike Electronics",
+                    "EVE Energy",
+                    "Analog Devices, Inc.",
+                    "Microchip",
+                    "AMD",
+                    "Murata",
+                    "NXP Semiconductors",
+                    "Toshiba",
+                    "Vishay",
+                    "Fairchild"
+                ]
+            },
+            "customers": [
+                { "name": "C-DoT", "location": "Bangalore & New Delhi", "logo": "/customers/cdot.png" },
+                { "name": "Indian Telephone Industries Ltd", "location": "Bangalore", "logo": "/customers/iti.png", "whiteBg": true },
+                { "name": "Bharat Electronics Ltd", "location": "Bangalore", "logo": "/customers/bel.png", "whiteBg": true },
+                { "name": "Electronic Corporation of India", "location": "Hyderabad", "logo": null, "whiteBg": true },
+                { "name": "Naina Power Pvt Ltd", "location": "Hyderabad", "logo": "/customers/nainapower.jpg" },
+                { "name": "Philips Lighting solutions", "location": "Noida", "logo": "/customers/philips-signify.png" },
+                { "name": "Simco Ltd", "location": "Trichy", "logo": "/customers/simco.png" },
+                { "name": "Stelmec Ltd", "location": "Vasai (Mumbai)", "logo": "/customers/stelmec.png", "whiteBg": true },
+                { "name": "Syscon Instruments Pvt Ltd", "location": "Bangalore", "logo": "/customers/syscon.png", "whiteBg": true },
+                { "name": "L&T Limited", "location": "Mysore", "logo": "/customers/l-and-t.png", "whiteBg": true },
+                { "name": "IVP SEMI", "location": "Coimbatore", "logo": "/partners/ivp-semi.png" },
+                { "name": "CMTi", "location": "Bangalore", "logo": "/partners/cmti.png" }
+            ],
+            "design_development": {
+                "overview": "We Design embedded and software solutions that make technology seamless. We channel our collective expertise to stretch the limits of technology, understand customers’ needs, and help them get to market faster.",
+                "capabilities": [
+                    "Highly specialized & skilled R&D staff.",
+                    "Specialized domain knowledge in embedded systems, production, and mechanical products.",
+                    "Modern Lab Facility for both Hardware & Software."
+                ]
+            },
+            "business_plan": {
+                "title": "Future roadmap",
+                "points": [
+                    "Strong & experienced Marketing team driving growth.",
+                    "Market leadership in the Energy Meter segment across India via LCD solutions.",
+                    "Strategic promotion of high-end brands like VANGO.",
+                    "Development of specialized Reference Boards based on utility Tenders."
+                ]
+            },
+            "strategies": [
+                "Partnership with Customers and Principals to participate in new product design programs.",
+                "Proactive response to Customers' needs with Total Product Solutions.",
+                "Complement Sales with Technical support.",
+                "Focus on prevailing High end products as well as advanced technology products."
+            ],
+            "strengths": [
+                "Excellent Customers Relationships Management.",
+                "Dynamic, experienced and self motivated sales force.",
+                "Qualified technical support team.",
+                "Team include Engineers having more than 10 years experience in Energy meter segment.",
+                "Focused approach for the Market."
+            ]
+        }
+    },
+    "products": {
+        "header": "OUR EXPERTISE",
+        "title": "Manufacturers Catalog",
+        "items": [
+            {
+                "id": "p1",
+                "name": "ELECTRONIC INTEGRATED CIRCUITS",
+                "category": "Integrated Circuits",
+                "price": "Ask Price",
+                "buttonText": "View Details"
+            },
+            {
+                "id": "p2",
+                "name": "SURGE SUPPRESSORS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p3",
+                "name": "ELECTRONIC INTEGRATED CIRCUIT",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p4",
+                "name": "PLUGS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p5",
+                "name": "ELECTRONIC INTEGRATED CIRCUIT",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p6",
+                "name": "SOCKETS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p7",
+                "name": "MICRO-ASSEMBLIES -CARDS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p8",
+                "name": "PLUGS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p9",
+                "name": "SOCKETS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p10",
+                "name": "MICRO-ASSEMBLIES -CARDS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Ask Price"
+            },
+            {
+                "id": "p11",
+                "name": "SURGE SUPPRESSORS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details"
+            },
+            {
+                "id": "p12",
+                "name": "ELECTRONIC INTEGRATED CIRCUIT",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "secondary": true
+            },
+            {
+                "id": "p13",
+                "name": "PLUGS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "secondary": true
+            },
+            {
+                "id": "p14",
+                "name": "ELECTRONIC INTEGRATED CIRCUIT",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "highlight": true
+            },
+            {
+                "id": "p15",
+                "name": "SOCKETS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "secondary": true
+            },
+            {
+                "id": "p16",
+                "name": "MICRO-ASSEMBLIES -CARDS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "secondary": true
+            },
+            {
+                "id": "p17",
+                "name": "PLUGS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "highlight": true
+            },
+            {
+                "id": "p18",
+                "name": "SOCKETS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "highlight": true
+            },
+            {
+                "id": "p19",
+                "name": "MICRO-ASSEMBLIES -CARDS",
+                "category": "Other Products",
+                "price": "Ask Price",
+                "buttonText": "Get Price & Details",
+                "highlight": true
+            }
+        ]
+    },
+    "partners": {
+        "header": "REPRESENTATION",
+        "items": [
+            {
+                "name": "MS RELAYS",
+                "description": "ISO/IECQ Certified Manufacturer of Automotive & Power Relays",
+                "logo": "/partners/ms-relays.png"
+            },
+            {
+                "name": "BONAFIDE Electronics",
+                "description": "ISO Certified Manufacturer of LCDs, Graphic & TFT Displays",
+                "logo": "/partners/bonafide.png"
+            },
+            {
+                "name": "Mouser Electronics",
+                "description": "Global Authorized Distributor",
+                "logo": "/partners/mouser.png"
+            },
+            {
+                "name": "DigiKey",
+                "description": "Electronic Components Distributor",
+                "logo": "/partners/digikey.png"
+            },
+            {
+                "name": "element14",
+                "description": "Technology Products & Solutions",
+                "logo": "/partners/element14.png"
+            },
+            {
+                "name": "Formike Electronics",
+                "description": "Display & Touch Panel Manufacturer",
+                "logo": "/partners/formike.png"
+            },
+            {
+                "name": "EVE Energy",
+                "description": "Lithium Battery Manufacturer",
+                "logo": "/partners/eve.png"
+            }
+        ]
+    },
+    "capabilities": {
+        "header": "CAPABILITIES",
+        "title": "Design & Development",
+        "description": "Arbutus also provides Ready Reckoner Solutions in different Verticals to meet wide customer requirements. ARBUTUS is a One-stop Sourcing and Design Solution provider for electronic products.",
+        "services": [
+            "Over 22 Years Of Experience",
+            "Team Of Highly Specialized & Skilled R & D Staff",
+            "Design, Embedded & Software Solutions That Make Technology Seamless",
+            "Channel Our Collective Expertise To Stretch The Limits Of Technology",
+            "Modern Lab Facility For Both Hardware & Software.",
+            "Strong In IoT, Energy Meter, Industrial, Automotive"
+        ]
+    },
+    "lineCard": [
+        "Adamtech Interconnects",
+        "Adesto Technologies",
+        "Agilent Technologies",
+        "Allegro Microsystems, Inc.",
+        "Alliance Semiconductor Corporation",
+        "Alpha & Omega Semiconductors",
+        "Altech Corporation",
+        "Altera Corporation",
+        "American Zettler Inc.",
+        "Amphenol ICC – FCI",
+        "Analog Devices, Inc.",
+        "API Delevan",
+        "Arcotronics",
+        "AT&T",
+        "Atmel Corporation",
+        "Avago Technologies, Inc.",
+        "AVX Corporation",
+        "Bivar",
+        "Bosch Sensortec",
+        "Bourns",
+        "BP Semi",
+        "C&K",
+        "Catalyst Semiconductor Inc.",
+        "Cirrus Logic",
+        "Citizen Fine devices",
+        "Coil Craft",
+        "Conexant",
+        "Cypress Semiconductor Corporation",
+        "Dallas",
+        "Davicom",
+        "DC Components",
+        "Deca Switch Lab Inc.",
+        "Delta",
+        "Diodes Inc",
+        "Diotec Semiconductor AG",
+        "Diptronics",
+        "EATON",
+        "Ecliptek",
+        "ECS Inc.",
+        "Elna",
+        "Elpida",
+        "Epcos",
+        "Epson",
+        "E-switch",
+        "Everlight Electronics Co., Ltd.",
+        "Exar Corporation",
+        "Fairchild Semiconductor Corporation",
+        "Fibcom",
+        "Fox Electonics",
+        "Freescale Semiconductor, Inc.",
+        "Fuji",
+        "Fujitsu",
+        "Futuretech Devices",
+        "Good-Ark Semiconductor",
+        "GoodSky",
+        "Grayhill",
+        "Halo Electronics",
+        "Harting",
+        "Hirose Electric Co., Ltd.",
+        "Hitachi",
+        "Holtek Semiconductor Inc.",
+        "Honeywell",
+        "Hongfa",
+        "Hyundai/Hynix",
+        "ICS",
+        "IK Semi",
+        "Illinois Capacitors",
+        "IMS",
+        "Infineon Technologies AG",
+        "Integrated Device Technology Inc.",
+        "Intel",
+        "International Rectifier",
+        "Intersil Americas Inc.",
+        "ISOCOM",
+        "ISSI",
+        "IXYS",
+        "Kemat",
+        "Keystone",
+        "Kingtronics",
+        "Kramer",
+        "Kyocera",
+        "Laird",
+        "Lattice Semiconductor Corp.",
+        "Linear Technology Corpn.",
+        "Lite-On",
+        "Littelfuse, Inc.",
+        "Lumex",
+        "Master Instrument Corpn.",
+        "Maxim-Dallas",
+        "Mean Well",
+        "Mersen",
+        "Micrel, Inc.",
+        "Micro Commercial Components",
+        "Microchip Technology Inc.",
+        "Micron Technology, Inc.",
+        "Microsemi",
+        "Mitel Networks Corporation",
+        "Mitsubishi",
+        "Molex Interconnect",
+        "Motorola",
+        "Murata Electronics North America",
+        "Murata Power Systems",
+        "National Semiconductor",
+        "NEC",
+        "Nexperia",
+        "Nichicon",
+        "NJRC",
+        "NXP",
+        "Ohmite",
+        "Okaya Electric (S) Pte. Ltd.",
+        "OKI Semiconductor",
+        "Omron",
+        "ON Semiconductor",
+        "OSRAM",
+        "Panasonic – ECG",
+        "Pericom Semiconductor Corporation.",
+        "Philips Semiconductors",
+        "Phoenix",
+        "Phycomp",
+        "PMC",
+        "Power Integration",
+        "Pulse Tech",
+        "Qualcom",
+        "Raltron",
+        "Realtek",
+        "Renesas",
+        "Rockwell",
+        "Rohm",
+        "SAMSUNG Electronics Co. Ltd.",
+        "Samtec",
+        "Samwha",
+        "Sanyo",
+        "Schneider",
+        "Schruter",
+        "Seiko Instruments Inc.",
+        "Semtech",
+        "Sharp",
+        "Siemens",
+        "Silicon Labs",
+        "Silicon Storage Technology, Inc.",
+        "Siliconix",
+        "Sipex Corporation",
+        "Stackpole Electronics",
+        "STMicroelectronics",
+        "Sunnon",
+        "SUNS Industrial",
+        "Suntan",
+        "Syfer",
+        "Taiwan Semiconductors",
+        "Taiyo Yuden",
+        "TDK Corporation",
+        "Teccor",
+        "Texas Instruments",
+        "Tyco Electronics",
+        "UTC",
+        "Vicor",
+        "Vishay Intertechnology, Inc.",
+        "Wago",
+        "Walsin Technology",
+        "Weidmuller",
+        "Wima",
+        "Winbond Electronic Corporation",
+        "Wurth Electronics",
+        "Xiamen Hongmei Electronic Co., Ltd.",
+        "Xilinx, Inc.",
+        "YAGEO Corporation",
+        "Yamaichi",
+        "Zarlink",
+        "Zetex Inc",
+        "Zettler Magnetics",
+        "Zilog"
+    ],
+    "manufacturers": [
+        {
+            "category": "ACTIVE COMPONENTS",
+            "items": [
+                "RENESAS",
+                "ROHM",
+                "BOSCH",
+                "QORVO (Active Components)",
+                "QUECTEL",
+                "QUALCOMM",
+                "HONEYWELL",
+                "SGMICRO",
+                "IGNION",
+                "MACRONIX",
+                "ABLIC | SII",
+                "BOSCH SENSORTEC",
+                "SENSATA",
+                "MELEXIS",
+                "ESMT",
+                "GIGA DEVICE",
+                "JMICRON",
+                "IC PLUS",
+                "INJOINIC",
+                "PIXART",
+                "OMNIVISION"
+            ]
+        },
+        {
+            "category": "PASSIVE COMPONENTS",
+            "items": [
+                "TDK",
+                "YAGEO",
+                "BETTERFUSE",
+                "SUMIDA",
+                "FIRSTOHM",
+                "PANASONIC",
+                "NICHICON",
+                "KODENSHI",
+                "HONGFA",
+                "PRISMATIC",
+                "COILMASTER",
+                "MINEBEAMITSUMI",
+                "CHONGQING CAS SCAPE",
+                "EATON",
+                "LINK-PP",
+                "MURATA",
+                "DEXERIALS",
+                "VISHAY INTERTECHNOLOGY",
+                "COILANK TECHNOLOGY",
+                "RINCON POWER",
+                "IDEAL SEMI",
+                "MITSUBISHI ELECTRIC",
+                "SUSCON",
+                "KORCHIP",
+                "TRANSON"
+            ]
+        },
+        {
+            "category": "BATTERY",
+            "items": [
+                "EVE ENERGY"
+            ]
+        },
+        {
+            "category": "POWER SUPPLY",
+            "items": [
+                "AIMTEC",
+                "COSEL",
+                "TDK LAMBDA"
+            ]
+        },
+        {
+            "category": "DISCRETE COMPONENT",
+            "items": [
+                "AOS",
+                "TAIWAN SEMICONDUCTOR",
+                "DIOTEC",
+                "CT MICRO",
+                "GOFORD SEMICONDUCTOR",
+                "SK POWERTECH",
+                "TRINNO TECHNOLOGY",
+                "UNION SEMICONDUCTOR",
+                "WOLFSPEED"
+            ]
+        },
+        {
+            "category": "RF AND MICROWAVE",
+            "items": [
+                "MERCURY SYSTEMS",
+                "AMPLITECH",
+                "MTRONPTI",
+                "QORVO",
+                "AMCOM",
+                "MCV MICROWAVE"
+            ]
+        },
+        {
+            "category": "DISPLAY",
+            "items": [
+                "TIANMA"
+            ]
+        },
+        {
+            "category": "ELECTRO MECHANICAL & CONNECTORS",
+            "items": [
+                "CHUROD",
+                "HIROSE",
+                "ATTEND",
+                "FUJITSU",
+                "DEGSON",
+                "SUNON",
+                "GOLDEN RELAY",
+                "KS TERMINALS",
+                "LOTES"
+            ]
+        },
+        {
+            "category": "PCB",
+            "items": [
+                "SCC"
+            ]
+        },
+        {
+            "category": "TIMING DEVICES",
+            "items": [
+                "TXC / QST",
+                "ECS Inc"
+            ]
+        }
+    ]
+}

@@ -1,13 +1,10 @@
 import { NextResponse } from "next/server";
-import Database from 'better-sqlite3';
-import path from 'path';
-
-const db = new Database(path.join(process.cwd(), 'data', 'database.sqlite'));
+import db from "@/lib/db";
 
 export async function GET() {
     try {
-        const rows = db.prepare('SELECT * FROM products ORDER BY id ASC').all();
-        const products = rows.map((p: any) => ({
+        const result = await db.execute('SELECT * FROM products ORDER BY id ASC');
+        const products = result.rows.map((p: any) => ({
             ...p,
             images: JSON.parse(p.images || '[]')
         }));

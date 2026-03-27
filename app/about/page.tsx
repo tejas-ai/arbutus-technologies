@@ -8,8 +8,12 @@ import db from "@/lib/db";
 
 async function getAboutData() {
     try {
-        const row = db.prepare('SELECT content FROM site_content WHERE key = ?').get('main') as any;
-        const data = row ? JSON.parse(row.content)?.about : null;
+        const result = await db.execute({
+            sql: 'SELECT content FROM site_content WHERE key = ?',
+            args: ['main']
+        });
+        const row = result.rows[0];
+        const data = row ? JSON.parse(row.content as string)?.about : null;
         return data || null;
     } catch {
         return null;

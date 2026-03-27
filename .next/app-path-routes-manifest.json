@@ -1,1 +1,19 @@
-{"/_not-found/page":"/_not-found","/api/products/route":"/api/products","/api/messages/route":"/api/messages","/about/page":"/about","/client-dashboard/page":"/client-dashboard","/page":"/","/line-card/page":"/line-card","/contact/page":"/contact","/products/electronic-integrated-circuits/page":"/products/electronic-integrated-circuits","/products/memory/page":"/products/memory","/products/power-devices/page":"/products/power-devices","/products/protection-devices/page":"/products/protection-devices","/products/sensors/page":"/products/sensors","/success/page":"/success","/products/timing-devices/page":"/products/timing-devices","/services/rd-capabilities/page":"/services/rd-capabilities","/tools/page":"/tools"}
+{
+  "/_not-found/page": "/_not-found",
+  "/api/messages/route": "/api/messages",
+  "/api/products/route": "/api/products",
+  "/about/page": "/about",
+  "/line-card/page": "/line-card",
+  "/contact/page": "/contact",
+  "/products/electronic-integrated-circuits/page": "/products/electronic-integrated-circuits",
+  "/products/memory/page": "/products/memory",
+  "/page": "/",
+  "/client-dashboard/page": "/client-dashboard",
+  "/products/power-devices/page": "/products/power-devices",
+  "/products/protection-devices/page": "/products/protection-devices",
+  "/products/sensors/page": "/products/sensors",
+  "/products/timing-devices/page": "/products/timing-devices",
+  "/services/rd-capabilities/page": "/services/rd-capabilities",
+  "/success/page": "/success",
+  "/tools/page": "/tools"
+}

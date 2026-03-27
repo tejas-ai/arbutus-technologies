@@ -1,30 +1,22 @@
-(()=>{var e={};e.id=434,e.ids=[434],e.modules={7550:e=>{"use strict";e.exports=require("better-sqlite3")},846:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},4870:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-route.runtime.prod.js")},3295:e=>{"use strict";e.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},9294:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-async-storage.external.js")},3033:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},9021:e=>{"use strict";e.exports=require("fs")},3873:e=>{"use strict";e.exports=require("path")},7918:(e,s,t)=>{"use strict";t.r(s),t.d(s,{patchFetch:()=>m,routeModule:()=>p,serverHooks:()=>l,workAsyncStorage:()=>d,workUnitAsyncStorage:()=>E});var r={};t.r(r),t.d(r,{POST:()=>T});var n=t(2706),a=t(8203),o=t(5994),i=t(9187),u=t(2545);let c=new Map;async function T(e){let s=e.headers.get("x-forwarded-for")||"anonymous",t=Date.now(),r=c.get(s);if(r){if(t-r.lastRequest<6e4){if(r.count>=3)return i.NextResponse.json({success:!1,error:"Too many requests. Please try again later."},{status:429});r.count+=1}else r.count=1,r.lastRequest=t}else c.set(s,{count:1,lastRequest:t});try{let t=await e.json(),{name:r,email:n,company:a,content:o,message:c,subject:T,type:p,_hp:d}=t,E=o||c,l=T||p||a||"General Inquiry";if(d)return console.warn("Honeypot triggered from IP:",s),i.NextResponse.json({success:!0,message:"Thank you for your submission."});if(!r||!n||!E)return console.error("Validation failed: Missing required fields",{receivedBody:t,inferred:{name:r,email:n,finalContent:E}}),i.NextResponse.json({success:!1,error:"Missing required fields."},{status:400});if(r.length>100||n.length>254||a&&a.length>100||o.length>2e3)return i.NextResponse.json({success:!1,error:"Input exceeds maximum length."},{status:400});if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n))return i.NextResponse.json({success:!1,error:"Invalid email format."},{status:400});let m=e=>e.replace(/[&<>"']/g,e=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[e]||e),g=m(r),N=m(n),R=m(l),x=m(E);return u.A.prepare(`
-            INSERT INTO messages (name, email, subject, message, timestamp, status)
-            VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, 'new')
-        `).run(g,N,R,x),i.NextResponse.json({success:!0,message:"Inquiry received and secured"})}catch(e){return console.error("Database error saving inquiry:",e),i.NextResponse.json({success:!1,error:"Internal Server Error"},{status:500})}}let p=new n.AppRouteRouteModule({definition:{kind:a.RouteKind.APP_ROUTE,page:"/api/messages/route",pathname:"/api/messages",filename:"route",bundlePath:"app/api/messages/route"},resolvedPagePath:"D:\\Arbutus\\app\\api\\messages\\route.ts",nextConfigOutput:"",userland:r}),{workAsyncStorage:d,workUnitAsyncStorage:E,serverHooks:l}=p;function m(){return(0,o.patchFetch)({workAsyncStorage:d,workUnitAsyncStorage:E})}},6487:()=>{},8335:()=>{},2545:(e,s,t)=>{"use strict";t.d(s,{A:()=>p});var r=t(7550),n=t.n(r),a=t(3873),o=t.n(a),i=t(9021),u=t.n(i);let c=o().join(process.cwd(),"data","database.sqlite");u().existsSync(o().join(process.cwd(),"data"))||u().mkdirSync(o().join(process.cwd(),"data"));let T=new(n())(c);T.exec(`
-    CREATE TABLE IF NOT EXISTS products (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        price TEXT,
-        category TEXT,
-        description TEXT,
-        status TEXT DEFAULT 'active',
-        image TEXT
-    );
-
-    CREATE TABLE IF NOT EXISTS messages (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        email TEXT NOT NULL,
-        subject TEXT,
-        message TEXT,
-        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-        status TEXT DEFAULT 'new'
-    );
-
-    CREATE TABLE IF NOT EXISTS site_content (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        key TEXT UNIQUE NOT NULL,
-        content TEXT NOT NULL
-    );
-`);let p=T}};var s=require("../../../webpack-runtime.js");s.C(e);var t=e=>s(s.s=e),r=s.X(0,[638,452],()=>t(7918));module.exports=r})();
+(()=>{var e={};e.id=434,e.ids=[434],e.modules={3295:e=>{"use strict";e.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},7462:(e,s,t)=>{"use strict";t.a(e,async(e,r)=>{try{t.d(s,{A:()=>d});var a=t(28855),n=t(33873),i=t.n(n),o=t(29021),u=t.n(o),c=e([a]);a=(c.then?(await c)():c)[0];let T=process.env.TURSO_DATABASE_URL||`file:${i().join(process.cwd(),"data","database.sqlite")}`,l=process.env.TURSO_AUTH_TOKEN;if(T.startsWith("file:")){let e=i().join(process.cwd(),"data");u().existsSync(e)||u().mkdirSync(e,{recursive:!0})}let p=(0,a.createClient)({url:T,authToken:l});(async()=>{try{await p.batch([`CREATE TABLE IF NOT EXISTS products (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                price TEXT,
+                category TEXT,
+                description TEXT,
+                status TEXT DEFAULT 'active',
+                images TEXT DEFAULT '[]'
+            );`,`CREATE TABLE IF NOT EXISTS messages (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                email TEXT NOT NULL,
+                subject TEXT,
+                message TEXT,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                status TEXT DEFAULT 'new'
+            );`,`CREATE TABLE IF NOT EXISTS site_content (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                key TEXT UNIQUE NOT NULL,
+                content TEXT NOT NULL
+            );`],"write"),console.log("Database initialized successfully.")}catch(e){console.error("Database initialization failed:",e)}})();let d=p;r()}catch(e){r(e)}})},10846:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},28855:e=>{"use strict";e.exports=import("@libsql/client")},29021:e=>{"use strict";e.exports=require("fs")},29294:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-async-storage.external.js")},33873:e=>{"use strict";e.exports=require("path")},44870:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-route.runtime.prod.js")},63033:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},78335:()=>{},89159:(e,s,t)=>{"use strict";t.a(e,async(e,r)=>{try{t.r(s),t.d(s,{POST:()=>o});var a=t(32190),n=t(7462),i=e([n]);n=(i.then?(await i)():i)[0];let u=new Map;async function o(e){let s=e.headers.get("x-forwarded-for")||"anonymous",t=Date.now(),r=u.get(s);if(r)if(t-r.lastRequest<6e4){if(r.count>=3)return a.NextResponse.json({success:!1,error:"Too many requests. Please try again later."},{status:429});r.count+=1}else r.count=1,r.lastRequest=t;else u.set(s,{count:1,lastRequest:t});try{let t=await e.json(),{name:r,email:i,company:o,content:u,message:c,subject:T,type:l,_hp:p}=t,d=u||c,E=T||l||o||"General Inquiry";if(p)return console.warn("Honeypot triggered from IP:",s),a.NextResponse.json({success:!0,message:"Thank you for your submission."});if(!r||!i||!d)return console.error("Validation failed: Missing required fields",{receivedBody:t,inferred:{name:r,email:i,finalContent:d}}),a.NextResponse.json({success:!1,error:"Missing required fields."},{status:400});if(r.length>100||i.length>254||o&&o.length>100||u.length>2e3)return a.NextResponse.json({success:!1,error:"Input exceeds maximum length."},{status:400});if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(i))return a.NextResponse.json({success:!1,error:"Invalid email format."},{status:400});let m=e=>e.replace(/[&<>"']/g,e=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[e]||e),g=m(r),R=m(i),N=m(E),x=m(d);return await n.A.execute({sql:`INSERT INTO messages (name, email, subject, message, timestamp, status)
+                  VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, 'new')`,args:[g,R,N,x]}),a.NextResponse.json({success:!0,message:"Inquiry received and secured"})}catch(e){return console.error("Database error saving inquiry:",e),a.NextResponse.json({success:!1,error:"Internal Server Error"},{status:500})}}r()}catch(e){r(e)}})},96487:()=>{},98046:(e,s,t)=>{"use strict";t.a(e,async(e,r)=>{try{t.r(s),t.d(s,{patchFetch:()=>c,routeModule:()=>T,serverHooks:()=>d,workAsyncStorage:()=>l,workUnitAsyncStorage:()=>p});var a=t(96559),n=t(48088),i=t(37719),o=t(89159),u=e([o]);o=(u.then?(await u)():u)[0];let T=new a.AppRouteRouteModule({definition:{kind:n.RouteKind.APP_ROUTE,page:"/api/messages/route",pathname:"/api/messages",filename:"route",bundlePath:"app/api/messages/route"},resolvedPagePath:"D:\\Arbutus\\app\\api\\messages\\route.ts",nextConfigOutput:"",userland:o}),{workAsyncStorage:l,workUnitAsyncStorage:p,serverHooks:d}=T;function c(){return(0,i.patchFetch)({workAsyncStorage:l,workUnitAsyncStorage:p})}r()}catch(e){r(e)}})}};var s=require("../../../webpack-runtime.js");s.C(e);var t=e=>s(s.s=e),r=s.X(0,[828,580],()=>t(98046));module.exports=r})();

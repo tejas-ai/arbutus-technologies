@@ -3,8 +3,17 @@ import db from "@/lib/db";
 import ScrollReveal from "./ScrollReveal";
 
 async function getPartnerData() {
-    const row = db.prepare('SELECT content FROM site_content WHERE key = ?').get('main') as any;
-    return row ? JSON.parse(row.content).partners : null;
+    try {
+        const result = await db.execute({
+            sql: 'SELECT content FROM site_content WHERE key = ?',
+            args: ['main']
+        });
+        const row = result.rows[0];
+        return row ? JSON.parse(row.content as string).partners : null;
+    } catch (e) {
+        console.error("Partner data fetch error:", e);
+        return null;
+    }
 }
 
 export default async function BrandPartners() {

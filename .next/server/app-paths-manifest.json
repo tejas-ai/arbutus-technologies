@@ -1,19 +1,19 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/products/route": "app/api/products/route.js",
   "/api/messages/route": "app/api/messages/route.js",
+  "/api/products/route": "app/api/products/route.js",
   "/about/page": "app/about/page.js",
-  "/client-dashboard/page": "app/client-dashboard/page.js",
-  "/page": "app/page.js",
   "/line-card/page": "app/line-card/page.js",
   "/contact/page": "app/contact/page.js",
   "/products/electronic-integrated-circuits/page": "app/products/electronic-integrated-circuits/page.js",
   "/products/memory/page": "app/products/memory/page.js",
+  "/page": "app/page.js",
+  "/client-dashboard/page": "app/client-dashboard/page.js",
   "/products/power-devices/page": "app/products/power-devices/page.js",
   "/products/protection-devices/page": "app/products/protection-devices/page.js",
   "/products/sensors/page": "app/products/sensors/page.js",
-  "/success/page": "app/success/page.js",
   "/products/timing-devices/page": "app/products/timing-devices/page.js",
   "/services/rd-capabilities/page": "app/services/rd-capabilities/page.js",
+  "/success/page": "app/success/page.js",
   "/tools/page": "app/tools/page.js"
 }

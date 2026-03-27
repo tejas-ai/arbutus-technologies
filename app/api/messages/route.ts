@@ -69,12 +69,11 @@ export async function POST(request: Request) {
         const safeSubject = sanitize(finalSubject);
         const safeContent = sanitize(finalContent);
 
-        const stmt = db.prepare(`
-            INSERT INTO messages (name, email, subject, message, timestamp, status)
-            VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, 'new')
-        `);
-
-        stmt.run(safeName, safeEmail, safeSubject, safeContent);
+        await db.execute({
+            sql: `INSERT INTO messages (name, email, subject, message, timestamp, status)
+                  VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, 'new')`,
+            args: [safeName, safeEmail, safeSubject, safeContent]
+        });
 
         return NextResponse.json({ success: true, message: "Inquiry received and secured" });
     } catch (error) {
