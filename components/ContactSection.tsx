@@ -36,16 +36,18 @@ export default function ContactSection() {
         };
 
         try {
-            const res = await fetch("/api/messages", {
+            const formDataToSend = new URLSearchParams();
+            formDataToSend.append("form-name", "contact");
+            formDataToSend.append("name", frozen.name);
+            formDataToSend.append("company", frozen.company);
+            formDataToSend.append("email", frozen.email);
+            formDataToSend.append("message", frozen.message);
+            formDataToSend.append("product", "General Inquiry");
+
+            const res = await fetch("/", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    name: frozen.name,
-                    company: frozen.company,
-                    email: frozen.email,
-                    content: frozen.message,
-                    product: "General Inquiry"
-                })
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: formDataToSend.toString()
             });
 
             if (res.ok) {
@@ -86,7 +88,15 @@ export default function ContactSection() {
                         <h3 className="text-3xl font-display italic text-white mb-2">Detailed Inquiry Form</h3>
                         <p className="text-white/60 text-sm mb-12 italic font-medium">For bulk component quotes or R&D consultation.</p>
 
-                        <form className="space-y-8" onSubmit={handleSubmit}>
+                        <form 
+                            className="space-y-8" 
+                            onSubmit={handleSubmit}
+                            name="contact"
+                            data-netlify="true"
+                            data-netlify-honeypot="bot-field"
+                        >
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div className="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                                 <div className="space-y-3">
                                     <label className="text-[10px] uppercase tracking-widest text-[#00b4d8]/50 font-black ml-4">Full Name</label>
